@@ -1,0 +1,14 @@
+¿Dónde se aplican los conceptos?
+Escalabilidad: El sistema se puede mejorar fácilmente. Por ejemplo, reemplazar la lista por una base de datos real como MongoDB o MySQL, o dividir el backend en servicios más chicos.
+Mantenibilidad: Cada parte del sistema está separada en archivos distintos, lo que hace más simple modificar o agregar funcionalidades.
+Seguridad: Se valida que la tarea no esté vacía antes de guardarla, evitando datos incorrectos o innecesarios.
+
+Este proyecto es una simulación sencilla de una app para gestionar tareas. Está organizada en tres capas principales:
+Frontend: Una página HTML con un formulario donde el usuario escribe una tarea.
+Backend: Un servidor hecho con Node.js que recibe esa tarea y se encarga de procesarla.
+Base de datos (simulada): Una lista (array) en memoria donde se van guardando las tareas.
+
+¿Cómo funciona?
+El usuario escribe una tarea y hace clic en el botón "Agregar".
+El frontend envía esa tarea al backend mediante una solicitud HTTP.
+El backend revisa que la tarea no esté vacía. Si está todo bien, la guarda en la lista y responde con un mensaje confirmando que fue guardada.
